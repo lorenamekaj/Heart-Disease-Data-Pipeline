@@ -123,3 +123,6 @@ if __name__ == "__main__":
     print("Valid records:", len(valid))
     print("Rejected records:", len(rejected))
     print("Rejection reasons:", reasons)
+
+
+    

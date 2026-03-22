@@ -187,3 +187,8 @@ if __name__ == "__main__":
     print("Total records:", analysis["total_records"])
     print("Numeric summary fields:", list(analysis.get("numeric_summary", {}).keys()))
     print("Categorical fields:", list(analysis.get("categorical_distributions", {}).keys()))
+
+
+
+
+    

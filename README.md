@@ -23,3 +23,20 @@ main.py
 - step_load() — calls the loader and prints file info
 - step_clean() — calls the cleaner and prints how many records were cleaned
 - step_write_outputs() — decides what to write based on mode, calls the reporter
+
+
+=============================================================================================
+
+Genc's Contribution
+
+validator.py
+
+- Validates each row for required columns and values before any cleaning or analysis.
+- Ensures numeric ranges (age, BP, cholesterol, heart rate, etc.) and categorical codes are correct.
+- Returns pass/fail signals with a rejection reason, enabling bad data to be logged and inspected.
+
+analyzer.py
+
+- Computes summary metrics from cleaned rows: numeric statistics (min/max/average/median) and categorical distributions.
+- Adds heart-disease insights when target labels are present (overall rate and breakdowns by age, sex, chest pain).
+- Produces structured analysis output for reporting and downstream model checks.
